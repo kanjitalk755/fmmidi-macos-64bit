@@ -1,0 +1,44 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                applyPreferences = id; 
+                concludeDragOperation = id; 
+                draggingEnded = id; 
+                draggingExited = id; 
+                orderFrontStandardAboutPanel = id; 
+                pausePlayback = id; 
+                resetEqualizer = id; 
+                resumePlayback = id; 
+                rewindSequencer = id; 
+            }; 
+            CLASS = MyController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                matrixSamplingRate = NSMatrix; 
+                myView = MyView; 
+                slider125Hz = NSSlider; 
+                slider16kHz = NSSlider; 
+                slider1kHz = NSSlider; 
+                slider250Hz = NSSlider; 
+                slider2kHz = NSSlider; 
+                slider4kHz = NSSlider; 
+                slider500Hz = NSSlider; 
+                slider62Hz = NSSlider; 
+                slider8kHz = NSSlider; 
+                sliderTap = NSSlider; 
+                textTap = NSTextField; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSDocumentController; 
+        }, 
+        {
+            CLASS = MyView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controller = id; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}
