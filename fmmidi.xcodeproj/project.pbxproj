@@ -12,46 +12,17 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		A914C90007CC85B700B82846 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A914C8FF07CC85B700B82846 /* Localizable.strings */; };
-		A94C6A5607C5C1D00001F209 /* midisynth.hpp in Resources */ = {isa = PBXBuildFile; fileRef = A94C6A5007C5C1D00001F209 /* midisynth.hpp */; };
 		A94C6A5707C5C1D10001F209 /* sequencer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A94C6A5107C5C1D00001F209 /* sequencer.cpp */; };
-		A94C6A5807C5C1D10001F209 /* sequencer.hpp in Resources */ = {isa = PBXBuildFile; fileRef = A94C6A5207C5C1D00001F209 /* sequencer.hpp */; };
 		A94C6A5907C5C1D10001F209 /* midisynth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A94C6A5307C5C1D00001F209 /* midisynth.cpp */; };
-		A94C6A5A07C5C1D10001F209 /* filter.hpp in Resources */ = {isa = PBXBuildFile; fileRef = A94C6A5407C5C1D00001F209 /* filter.hpp */; };
 		A94C6A5B07C5C1D10001F209 /* filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A94C6A5507C5C1D00001F209 /* filter.cpp */; };
 		A94C6A5E07C5C2340001F209 /* skin-a.tiff in Resources */ = {isa = PBXBuildFile; fileRef = A94C6A5C07C5C2340001F209 /* skin-a.tiff */; };
 		A94C6A5F07C5C2350001F209 /* skin-b.tiff in Resources */ = {isa = PBXBuildFile; fileRef = A94C6A5D07C5C2340001F209 /* skin-b.tiff */; };
 		A94C6A6207C5C3620001F209 /* skin.txt in Resources */ = {isa = PBXBuildFile; fileRef = A94C6A6007C5C3620001F209 /* skin.txt */; };
 		A94C6A6307C5C3620001F209 /* programs.txt in Resources */ = {isa = PBXBuildFile; fileRef = A94C6A6107C5C3620001F209 /* programs.txt */; };
-		A94C6AE407C5CAA90001F209 /* MyView.h in Resources */ = {isa = PBXBuildFile; fileRef = A94C6AE207C5CAA90001F209 /* MyView.h */; };
 		A94C6AE507C5CAA90001F209 /* MyView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A94C6AE307C5CAA90001F209 /* MyView.mm */; };
-		A959E10D07C62D270055CBCE /* MyController.h in Resources */ = {isa = PBXBuildFile; fileRef = A959E10B07C62D260055CBCE /* MyController.h */; };
 		A959E10E07C62D270055CBCE /* MyController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A959E10C07C62D270055CBCE /* MyController.mm */; };
 		A968A9D307C84EE9002C695E /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A968A9D207C84EE9002C695E /* AudioUnit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildStyle section */
-		4A9504CCFFE6A4B311CA0CBA /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		4A9504CDFFE6A4B311CA0CBA /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -66,16 +37,16 @@
 		A914C8F207CC82B200B82846 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		A914C8FD07CC855800B82846 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A914C90107CC85BD00B82846 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A94C6A5007C5C1D00001F209 /* midisynth.hpp */ = {isa = PBXFileReference; fileEncoding = "-2147481087"; lastKnownFileType = sourcecode.cpp.h; path = midisynth.hpp; sourceTree = "<group>"; };
-		A94C6A5107C5C1D00001F209 /* sequencer.cpp */ = {isa = PBXFileReference; fileEncoding = "-2147481087"; lastKnownFileType = sourcecode.cpp.cpp; path = sequencer.cpp; sourceTree = "<group>"; };
-		A94C6A5207C5C1D00001F209 /* sequencer.hpp */ = {isa = PBXFileReference; fileEncoding = "-2147481087"; lastKnownFileType = sourcecode.cpp.h; path = sequencer.hpp; sourceTree = "<group>"; };
-		A94C6A5307C5C1D00001F209 /* midisynth.cpp */ = {isa = PBXFileReference; fileEncoding = "-2147481087"; lastKnownFileType = sourcecode.cpp.cpp; path = midisynth.cpp; sourceTree = "<group>"; };
-		A94C6A5407C5C1D00001F209 /* filter.hpp */ = {isa = PBXFileReference; fileEncoding = "-2147481087"; lastKnownFileType = sourcecode.cpp.h; path = filter.hpp; sourceTree = "<group>"; };
-		A94C6A5507C5C1D00001F209 /* filter.cpp */ = {isa = PBXFileReference; fileEncoding = "-2147481087"; lastKnownFileType = sourcecode.cpp.cpp; path = filter.cpp; sourceTree = "<group>"; };
+		A94C6A5007C5C1D00001F209 /* midisynth.hpp */ = {isa = PBXFileReference; fileEncoding = 18446744071562070529; lastKnownFileType = sourcecode.cpp.h; path = midisynth.hpp; sourceTree = "<group>"; };
+		A94C6A5107C5C1D00001F209 /* sequencer.cpp */ = {isa = PBXFileReference; fileEncoding = 18446744071562070529; lastKnownFileType = sourcecode.cpp.cpp; path = sequencer.cpp; sourceTree = "<group>"; };
+		A94C6A5207C5C1D00001F209 /* sequencer.hpp */ = {isa = PBXFileReference; fileEncoding = 18446744071562070529; lastKnownFileType = sourcecode.cpp.h; path = sequencer.hpp; sourceTree = "<group>"; };
+		A94C6A5307C5C1D00001F209 /* midisynth.cpp */ = {isa = PBXFileReference; fileEncoding = 18446744071562070529; lastKnownFileType = sourcecode.cpp.cpp; path = midisynth.cpp; sourceTree = "<group>"; };
+		A94C6A5407C5C1D00001F209 /* filter.hpp */ = {isa = PBXFileReference; fileEncoding = 18446744071562070529; lastKnownFileType = sourcecode.cpp.h; path = filter.hpp; sourceTree = "<group>"; };
+		A94C6A5507C5C1D00001F209 /* filter.cpp */ = {isa = PBXFileReference; fileEncoding = 18446744071562070529; lastKnownFileType = sourcecode.cpp.cpp; path = filter.cpp; sourceTree = "<group>"; };
 		A94C6A5C07C5C2340001F209 /* skin-a.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "skin-a.tiff"; sourceTree = "<group>"; };
 		A94C6A5D07C5C2340001F209 /* skin-b.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "skin-b.tiff"; sourceTree = "<group>"; };
-		A94C6A6007C5C3620001F209 /* skin.txt */ = {isa = PBXFileReference; fileEncoding = "-2147481087"; lastKnownFileType = text; path = skin.txt; sourceTree = "<group>"; };
-		A94C6A6107C5C3620001F209 /* programs.txt */ = {isa = PBXFileReference; fileEncoding = "-2147481087"; lastKnownFileType = text; path = programs.txt; sourceTree = "<group>"; };
+		A94C6A6007C5C3620001F209 /* skin.txt */ = {isa = PBXFileReference; fileEncoding = 18446744071562070529; lastKnownFileType = text; path = skin.txt; sourceTree = "<group>"; };
+		A94C6A6107C5C3620001F209 /* programs.txt */ = {isa = PBXFileReference; fileEncoding = 18446744071562070529; lastKnownFileType = text; path = programs.txt; sourceTree = "<group>"; };
 		A94C6AE207C5CAA90001F209 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		A94C6AE307C5CAA90001F209 /* MyView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyView.mm; sourceTree = "<group>"; };
 		A959E10B07C62D260055CBCE /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
@@ -197,17 +168,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				DEAD_CODE_STRIPPING = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = fmmidi_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = fmmidi;
-				WRAPPER_EXTENSION = app;
-			};
 			dependencies = (
 			);
 			name = fmmidi;
@@ -221,16 +181,20 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = A9E7880F0A6FE0D400DFD893 /* Build configuration list for PBXProject "fmmidi" */;
-			buildSettings = {
+			attributes = {
 			};
-			buildStyles = (
-				4A9504CCFFE6A4B311CA0CBA /* Development */,
-				4A9504CDFFE6A4B311CA0CBA /* Deployment */,
-			);
+			buildConfigurationList = A9E7880F0A6FE0D400DFD893 /* Build configuration list for PBXProject "fmmidi" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				English,
+				Japanese,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* fmmidi */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* fmmidi */,
 			);
@@ -244,15 +208,10 @@
 			files = (
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				A94C6A5607C5C1D00001F209 /* midisynth.hpp in Resources */,
-				A94C6A5807C5C1D10001F209 /* sequencer.hpp in Resources */,
-				A94C6A5A07C5C1D10001F209 /* filter.hpp in Resources */,
 				A94C6A5E07C5C2340001F209 /* skin-a.tiff in Resources */,
 				A94C6A5F07C5C2350001F209 /* skin-b.tiff in Resources */,
 				A94C6A6207C5C3620001F209 /* skin.txt in Resources */,
 				A94C6A6307C5C3620001F209 /* programs.txt in Resources */,
-				A94C6AE407C5CAA90001F209 /* MyView.h in Resources */,
-				A959E10D07C62D270055CBCE /* MyController.h in Resources */,
 				A914C90007CC85B700B82846 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +267,7 @@
 		A9E7880C0A6FE0D400DFD893 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -316,9 +276,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = fmmidi_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = fmmidi;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -327,6 +290,7 @@
 		A9E7880D0A6FE0D400DFD893 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -334,9 +298,12 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = fmmidi_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = fmmidi;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -345,14 +312,18 @@
 		A9E7880E0A6FE0D400DFD893 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = fmmidi_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = fmmidi;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Default;

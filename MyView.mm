@@ -85,7 +85,9 @@ static void drawElement(ui_element_t& element, NSImage* skin1, NSImage* skin2, N
                 NSRect& r = (*elements)["text"].rect;
                 float fontSize = r.size.height;
                 NSFont* font = [NSFont userFontOfSize:fontSize];
-                fontSize *= fontSize / [font defaultLineHeightForFont];
+                NSLayoutManager *lm = [[NSLayoutManager alloc] init];
+                fontSize *= fontSize / [lm defaultLineHeightForFont:font];
+                [lm release];
                 font = [NSFont userFontOfSize:fontSize];
                 NSColor* color = [NSColor colorWithCalibratedRed:r.origin.x / 255.0
                                                            green:r.origin.y / 255.0
