@@ -232,7 +232,11 @@ static bool initialize_audio(void)
 {
     AURenderCallbackStruct callback = { audio_render_callback, NULL };
     AudioStreamBasicDescription format;
-    audioUnit = OpenDefaultComponent(kAudioUnitType_Output, kAudioUnitSubType_DefaultOutput);
+	AudioComponentDescription desc = {
+		.componentType = kAudioUnitType_Output,
+		.componentSubType = kAudioUnitSubType_DefaultOutput,
+	};
+	AudioComponentInstanceNew(AudioComponentFindNext(NULL, &desc), &audioUnit);
     if(audioUnit){
         if(!AudioUnitInitialize(audioUnit)){
             UInt32 size = sizeof(format);
@@ -562,8 +566,8 @@ static void update_thread(void)
             [view setValue:sequencer_time / sequencer.get_total_time() forKey:"position" type:UI_HORIZONTAL];
             [lock unlock];
         }
-        [view updateElements];
-        [NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.005]];
+		[view performSelectorOnMainThread:@selector(updateElements) withObject:nil waitUntilDone:NO];
+        [NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.016]];
         [pool release];
     }
 }
@@ -573,7 +577,7 @@ static void spectrum_thread(void)
     int last_note_count = 0;
     while(status != STATUS_TERMINATING){
         NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-        if([view canDraw]){
+        if(1/*[view canDraw]*/){
             if(last_note_count != note_count){
                 char s[64];
                 last_note_count = note_count;
